@@ -1,0 +1,344 @@
+:root {
+  --primary-color: #646c88;
+  --secondary-color: #4f566d;
+  /* --tertiary-color: #0000ff; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+
+  color: var(--primary-color);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  /* letter-spacing: 0.05rem; */
+  /* color: transparent;
+    font-family: studiofeixen, Arial, Helvetica, sans-serif;
+    letter-spacing: .05rem;
+    font-weight: 800;
+    -webkit-text-stroke: 2px #606887;
+    font-variation-settings: "wght" 800, "wdth" 100; */
+}
+
+/********** Generic CSS **********/
+
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 650;
+}
+
+h4 {
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  font-weight: 650;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin-right: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  text-transform: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/********** App CSS **********/
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+/********** Header CSS **********/
+.header {
+  display: flex;
+  position: relative; /* <-- add this (or fixed if you want sticky on scroll) */
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  max-width: 1800px;
+  margin: 5% auto 0;
+  z-index: 1000; /* make it higher than about */
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid black; */
+}
+
+.nav a {
+  list-style-type: none;
+  /* border: 1px solid black; */
+}
+
+/********** Main Content CSS **********/
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 63%;
+
+  /* border: 1px solid black; */
+}
+
+.main-content h3 {
+  margin: 0 auto;
+  align-self: center;
+  /* border: 1px solid black; */
+}
+
+.main-content h3 span {
+  color: transparent; /* make fill invisible */
+  -webkit-text-stroke: 1px var(--secondary-color);
+}
+
+.main-content p {
+  align-self: center;
+  margin-bottom: 1rem;
+  /* border: 1px solid black; */
+}
+
+.main-content div {
+  display: flex;
+  width: 40%;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 1px solid black; */
+}
+
+.main-content a {
+  margin: auto;
+  padding-top: 0.5rem;
+  /* border: 1px solid black; */
+}
+
+.main-content a span {
+  padding: 0.2rem;
+  /* border: 1px solid black; */
+}
+
+/********** Menu CSS **********/
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  background: rgba(255, 255, 255, 1);
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  /* border: 1px solid black; */
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
+
+.menu .menu-links {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  width: 45%;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 4.3rem;
+  color: var(--primary-color);
+  width: fit-content;
+  /* border: 1px solid black; */
+}
+
+/********** Work CSS **********/
+.work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 6.2rem auto 0;
+  width: 100%;
+  height: 900vh;
+}
+
+.work-images {
+  background-color: #4f566d;
+  border-radius: 0 48px 0 0;
+}
+
+.work-text {
+  text-transform: lowercase;
+  font-weight: 650;
+  padding-right: 16rem;
+  margin: -1.95rem 0 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-text h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 1.5rem 0;
+}
+
+.work-titles {
+  max-height: 63vh; /* set the scrollable height */
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.work-titles div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 1.5rem 0;
+}
+/*.work-titles h4 {
+  
+} */
+
+.work-titles p {
+  text-align: right;
+  /* border: #4f566d solid 1px; */
+}
+
+.work-titles::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* .work-text h4 {
+  padding: 1.5rem 0;
+} */
+
+/********** Button CSS **********/
+.button {
+  font-size: 1.25rem;
+  text-transform: lowercase;
+  color: var(--primary-color);
+}
+
+/********** About CSS **********/
+.about {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* border: 1px solid black; */
+}
+
+.about .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 80%;
+  justify-content: center;
+  margin: 0 3rem 13rem 14.5rem;
+  /* border: #4f566d solid 2px; */
+}
+
+.about h2 {
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 0.5rem 0;
+}
+
+.about p {
+  width: 75%;
+  margin: 1.7rem 0 1rem 0;
+  /* border: #4f566d solid 1px; */
+}
+
+.about .about-image {
+  background-color: #eb520b;
+  border-radius: 0 0 0 48px;
+  height: 88vh;
+  width: 25%;
+  color: transparent;
+  /* object-fit: cover; */
+  /* border: #4f566d solid 1px; */
+}
+
+/********** Contact CSS **********/
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 5rem auto 0;
+  width: 75%;
+  /* border: 1px solid black; */
+}
+
+.contact h2 {
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 0.5rem 0;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1.5rem 0 0 0;
+  /* border: 1px solid black; */
+}
+
+.contact-left,
+.contact-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-height: 30px;
+  /* border: 1px solid black; */
+}
+
+/* .contact-container a {
+  font-size: 1.25rem;
+} */
