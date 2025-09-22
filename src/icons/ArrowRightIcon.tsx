@@ -2,7 +2,7 @@ interface IconProps {
   size?: number;
 }
 
-export const ArrowRightIcon = ({ size = 20 }: IconProps) => {
+export const ArrowRightIcon = ({ size = 21 }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@ export const ArrowRightIcon = ({ size = 20 }: IconProps) => {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <g transform="translate(0,6)">
+      <g transform="translate(0,1)">
         <path d="M5 12h14" />
         <path d="M13 18l6-6-6-6" />
       </g>
