@@ -6,9 +6,10 @@ import { MoonIcon } from "../icons/MoonIcon";
 import { DotMenu } from "../icons/DotMenu";
 import { Menu } from "../pages/Menu";
 
+import { AnimatePresence } from "framer-motion";
+
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
@@ -23,13 +24,14 @@ export const Header = () => {
             <MoonIcon />
           </Link>
 
-          {/* No need for an extra button around DotMenu */}
           <DotMenu isActive={isMenuOpen} setIsActive={setIsMenuOpen} />
         </nav>
       </header>
 
-      {/* When Menu renders, we pass down onClose */}
-      {isMenuOpen && <Menu onClose={closeMenu} />}
+      {/* Always render Menu inside AnimatePresence */}
+      <AnimatePresence>
+        {isMenuOpen && <Menu onClose={closeMenu} key="menu" />}
+      </AnimatePresence>
     </>
   );
 };

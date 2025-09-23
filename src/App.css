@@ -68,6 +68,7 @@ a {
   height: 100vh;
   /* justify-content: center; */
   align-items: center;
+  background: transparent;
   /* border: 1px solid black; */
 }
 
@@ -154,27 +155,28 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  align-self: center;
-  background: rgba(255, 255, 255, 1);
-  z-index: 90;
+  /* align-self: center; */
+  /* background: rgba(255, 255, 255, 1); */
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
-}
+  background: #ffffff;
 
-.menu-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
   /* border: 1px solid black; */
 }
 
 .menu .menu-links {
   display: flex;
   flex-direction: column;
-  width: 45%;
-  margin: auto;
-  /* border: 1px solid black; */
+  justify-content: center;
+  width: 74%;
+  height: 100%;
+  margin-left: auto;
+  /* border: 2px solid rgb(3, 228, 70); */
+}
+
+.menu .menu-link {
+  display: flex;
+  /* border: 1px solid rgb(216, 13, 13); */
 }
 
 .menu a {
@@ -183,6 +185,7 @@ a {
   font-size: 4.3rem;
   color: var(--primary-color);
   width: fit-content;
+
   /* border: 1px solid black; */
 }
 
@@ -297,6 +300,7 @@ a {
 .about .about-image {
   height: 88vh;
   width: 25%;
+  z-index: -1;
   /* border: #4f566d solid 1px; */
 }
 
@@ -344,3 +348,12 @@ a {
 /* .contact-container a {
   font-size: 1.25rem;
 } */
+#tsparticles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Πίσω από όλο το content */
+  pointer-events: auto; /* Επιτρέπει interaction */
+}
