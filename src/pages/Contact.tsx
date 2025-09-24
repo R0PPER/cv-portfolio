@@ -20,7 +20,7 @@ export const Contact = () => {
           <h6>LINKEDIN</h6>
           <Button
             arrowIcon={<ArrowUpRightIcon />}
-            to="www.linkedin.com"
+            to="https://www.linkedin.com/in/panos-kyriazidis-763027192/"
             external
           >
             linkedin.com
