@@ -9,12 +9,11 @@ export const About = () => {
         <div>
           <h2>about</h2>
           <p>
-            Hey, my name is Charles Bruyerre and I use Sharlee as my nickname
-            across social medias. I’m a graphic designer, UX/UI designer &
-            front-end web developer from France. I’m also passionate about pop
-            music and make portraits and universes around what I listen to and
-            I’m always curious to learn more when it comes to new technologies
-            and creative coding.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+            fugiat incidunt, inventore qui obcaecati itaque necessitatibus
+            quisquam quos, nesciunt nulla soluta quidem laudantium sed deserunt
+            corrupti eligendi neque distinctio libero numquam sit earum repellat
+            ex odit! Voluptatum maxime at eos?
           </p>
 
           <Button arrowIcon={<ArrowDownIcon />} to={`www.google.com`} external>
