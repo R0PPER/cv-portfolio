@@ -10,10 +10,11 @@ export const SunIcon = ({ size = 24 }: IconProps) => {
       height={size}
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#4f566d"
+      stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      style={{ transform: "translateX(3px)" }} // moves the icon 5px to the right
     >
       <circle cx="12" cy="12" r="5" />
       <line x1="12" y1="1" x2="12" y2="3" />

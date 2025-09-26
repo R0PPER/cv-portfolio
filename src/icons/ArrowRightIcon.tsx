@@ -1,10 +1,12 @@
 interface IconProps {
   size?: number;
+  className?: string;
 }
 
-export const ArrowRightIcon = ({ size = 21 }: IconProps) => {
+export const ArrowRightIcon = ({ size = 21, className = "" }: IconProps) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width={size}
       height={size}

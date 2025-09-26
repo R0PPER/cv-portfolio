@@ -3,6 +3,7 @@ import cookSmarter from "./img/cooksmarter.png";
 import personalCv from "./img/personal-cv-pagepilling.png";
 import ticTacToe from "./img/tic-tac-toe.png";
 import timeIsRunning from "./img/time-is-running.png";
+import forkify from "./img/forkify.png";
 
 export type Project = {
   id: number;
@@ -17,7 +18,7 @@ export const projectsData: Project[] = [
   {
     id: 1,
     title: "Payment System",
-    languages: ["JavaScript", "HTML", "CSS", "MVC"],
+    languages: ["JavaScript", "HTML", "CSS", "MVC", "API"],
     link: "https://paymento.netlify.app/",
     image: paymento,
     fit: "cover",
@@ -55,15 +56,15 @@ export const projectsData: Project[] = [
     fit: "cover",
   },
   {
-    id: 1,
-    title: "Payment System",
-    languages: ["JavaScript", "HTML", "CSS", "MVC"],
-    link: "https://paymento.netlify.app/",
-    image: paymento,
+    id: 6,
+    title: "Recipe App",
+    languages: ["JavaScript", "HTML", "SCSS", "MVC", "API"],
+    link: "https://forkify-app-panos.netlify.app/",
+    image: forkify,
     fit: "cover",
   },
   {
-    id: 2,
+    id: 7,
     title: "Personal CV",
     languages: ["JavaScript", "JQuery", "HTML", "CSS"],
     link: "https://personal-cv-pagepilling.netlify.app/",
@@ -71,7 +72,7 @@ export const projectsData: Project[] = [
     fit: "contain",
   },
   {
-    id: 3,
+    id: 8,
     title: "Tic Tac Toe",
     languages: ["React", "CSS"],
     link: "https://tic-tac-toe-projectv01.netlify.app/",
@@ -79,7 +80,7 @@ export const projectsData: Project[] = [
     fit: "cover",
   },
   {
-    id: 4,
+    id: 9,
     title: "Cook Smarter",
     languages: ["Next.js", "Tailwind", "API"],
     link: "https://cooksmarter.netlify.app/",
@@ -87,7 +88,7 @@ export const projectsData: Project[] = [
     fit: "cover",
   },
   {
-    id: 5,
+    id: 10,
     title: "Time Is Running",
     languages: ["React", "CSS"],
     link: "https://time-is-running-v01.netlify.app/",

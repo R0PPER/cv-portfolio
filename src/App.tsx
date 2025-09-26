@@ -1,8 +1,10 @@
 // App.tsx
 import { Routes, Route, useLocation } from "react-router-dom";
+
 import { AnimatePresence } from "framer-motion";
 import { PageWrapper } from "./PageWrapper";
 import { ParticleBackground } from "./ParticleBackground";
+
 import { Header } from "./header/header";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";

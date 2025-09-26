@@ -44,7 +44,9 @@ export const CustomCursor = ({
 
     const checkPointer = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      setIsPointer(!!target.closest("a, button, [role='button'], .clickable"));
+      setIsPointer(
+        !!target.closest("a, button, [role='button'], .clickable, svg")
+      );
     };
 
     const handleMouseDown = () => {

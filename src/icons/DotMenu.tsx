@@ -12,13 +12,14 @@ export const DotMenu = ({
   isActive,
   setIsActive,
   size = 50,
-  strokeColor = "#4f566d",
+  strokeColor = "currentColor",
   strokeWidth = 2.4,
 }: DotMenuProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <svg
+      className="clickable"
       width={size}
       height={size}
       viewBox="0 0 72 72"
