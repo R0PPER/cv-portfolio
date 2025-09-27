@@ -44,7 +44,7 @@ export const projectsData: Project[] = [
   {
     id: 4,
     title: "Cook Smarter",
-    languages: ["Next.js", "Tailwind", "API"],
+    languages: ["JavaScript", "HTML", "CSS", "MVC", "API"],
     link: "https://cooksmarter.netlify.app/",
     image: cookSmarter,
     fit: "cover",
