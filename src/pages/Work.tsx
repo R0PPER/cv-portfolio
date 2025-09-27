@@ -1,45 +1,34 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { projectsData, type Project } from "../projectsData";
 import { ArrowRightIcon } from "../icons/ArrowRightIcon";
+import { handleImageLoad } from "../handleImageLoad";
 
 export const Work = () => {
   const [hoveredProject, setHoveredProject] = useState<Project | null>(null);
-  const [previousProject, setPreviousProject] = useState<Project | null>(null);
+  const imageContainerRef = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = (project: Project) => {
-    if (hoveredProject && hoveredProject.id !== project.id) {
-      // Αν αλλάζουμε project, κράτα το προηγούμενο για smooth transition
-      setPreviousProject(hoveredProject);
-    }
     setHoveredProject(project);
   };
 
   const handleMouseLeave = () => {
-    setPreviousProject(hoveredProject);
     setHoveredProject(null);
+    // Καθάρισε το background color όταν δεν υπάρχει hovered project
+    if (imageContainerRef.current) {
+      imageContainerRef.current.style.backgroundColor = "";
+    }
   };
 
   return (
     <div className="work">
-      <div className="work-images">
-        {/* Previous image - για smooth transition */}
-        {previousProject && previousProject.id !== hoveredProject?.id && (
-          <img
-            key={`prev-${previousProject.id}`}
-            className={`${previousProject.fit} image-exit`}
-            src={previousProject.image}
-            alt={previousProject.title}
-            onTransitionEnd={() => setPreviousProject(null)}
-          />
-        )}
-
-        {/* Current image */}
+      <div className="work-images" ref={imageContainerRef}>
         {hoveredProject && (
           <img
-            key={`current-${hoveredProject.id}`}
-            className={`${hoveredProject.fit} image-enter`}
+            key={hoveredProject.id}
+            className={hoveredProject.fit}
             src={hoveredProject.image}
             alt={hoveredProject.title}
+            onLoad={handleImageLoad}
           />
         )}
       </div>
