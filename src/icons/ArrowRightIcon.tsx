@@ -17,7 +17,7 @@ export const ArrowRightIcon = ({ size = 21, className = "" }: IconProps) => {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <g transform="translate(0,1)">
+      <g transform="translate(0,4)">
         <path d="M5 12h14" />
         <path d="M13 18l6-6-6-6" />
       </g>

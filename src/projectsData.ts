@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
   {
     id: 1,
     title: "Payment System",
-    languages: ["JavaScript", "HTML", "CSS", "MVC", "API"],
+    languages: ["JS", "HTML", "CSS", "MVC", "API"],
     link: "https://paymento.netlify.app/",
     image: paymento,
     fit: "cover",
@@ -28,7 +28,7 @@ export const projectsData: Project[] = [
   {
     id: 2,
     title: "Personal CV",
-    languages: ["JavaScript", "JQuery", "HTML", "CSS"],
+    languages: ["JS", "JQuery", "HTML", "CSS"],
     link: "https://personal-cv-pagepilling.netlify.app/",
     image: personalCv,
     fit: "contain",
@@ -44,7 +44,7 @@ export const projectsData: Project[] = [
   {
     id: 4,
     title: "Cook Smarter",
-    languages: ["JavaScript", "HTML", "CSS", "MVC", "API"],
+    languages: ["JS", "HTML", "CSS", "MVC", "API"],
     link: "https://cooksmarter.netlify.app/",
     image: cookSmarter,
     fit: "cover",
@@ -60,7 +60,7 @@ export const projectsData: Project[] = [
   {
     id: 6,
     title: "Recipe App",
-    languages: ["JavaScript", "HTML", "SCSS", "MVC", "API"],
+    languages: ["JS", "HTML", "SCSS", "MVC", "API"],
     link: "https://forkify-app-panos.netlify.app/",
     image: forkify,
     fit: "cover",
