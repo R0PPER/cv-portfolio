@@ -467,7 +467,7 @@ p {
   margin: auto;
   width: 75%;
   height: 63.6%;
-  border: 2px solid rgb(190, 223, 6);
+  /* border: 2px solid rgb(190, 223, 6); */
 }
 
 .contact h2 {
@@ -480,7 +480,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 1.5rem 0 0 0;
-  border: 1px solid rgb(255, 4, 4);
+  /* border: 1px solid rgb(255, 4, 4); */
 }
 
 .contact-left,
@@ -532,6 +532,19 @@ p {
   background: transparent !important;
 }
 
+/*********** APP Media Queries ***********/
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor,
+  .cursor-border,
+  .click-ripple {
+    display: none !important;
+  }
+
+  /* Επίσης επανάφερε το default cursor */
+  * {
+    cursor: auto !important;
+  }
+}
 /*********** WORK Media Queries ***********/
 /* Extra small devices (portrait phones) */
 @media (max-width: 575px) {
