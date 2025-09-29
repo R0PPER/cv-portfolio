@@ -1,12 +1,3 @@
-import paymento from "./img/paymento.webp";
-import cookSmarter from "./img/cooksmarter.webp";
-import personalCv from "./img/personal-cv-pagepilling.webp";
-import ticTacToe from "./img/tic-tac-toe.webp";
-import timeIsRunning from "./img/time-is-running.webp";
-import forkify from "./img/forkify.webp";
-import vsite from "./img/vsite.webp";
-import taskManager from "./img/taskmanager.webp";
-
 export type Project = {
   id: number;
   title: string;
@@ -22,7 +13,7 @@ export const projectsData: Project[] = [
     title: "Payment System",
     languages: ["JS", "HTML", "CSS", "MVC", "API", "Responsive"],
     link: "https://paymento.netlify.app/",
-    image: paymento,
+    image: "/img/paymento.webp",
     fit: "cover",
   },
   {
@@ -30,7 +21,7 @@ export const projectsData: Project[] = [
     title: "Personal CV",
     languages: ["JS", "JQuery", "HTML", "CSS"],
     link: "https://personal-cv-pagepilling.netlify.app/",
-    image: personalCv,
+    image: "/img/personal-cv-pagepilling.webp",
     fit: "contain",
   },
   {
@@ -38,7 +29,7 @@ export const projectsData: Project[] = [
     title: "Tic Tac Toe",
     languages: ["React", "CSS"],
     link: "https://tic-tac-toe-projectv01.netlify.app/",
-    image: ticTacToe,
+    image: "/img/tic-tac-toe.webp",
     fit: "cover",
   },
   {
@@ -46,7 +37,7 @@ export const projectsData: Project[] = [
     title: "Cook Smarter",
     languages: ["JS", "HTML", "CSS", "MVC", "API"],
     link: "https://cooksmarter.netlify.app/",
-    image: cookSmarter,
+    image: "/img/cooksmarter.webp",
     fit: "cover",
   },
   {
@@ -54,7 +45,7 @@ export const projectsData: Project[] = [
     title: "Time Is Running",
     languages: ["React", "CSS", "Responsive"],
     link: "https://time-is-running-v01.netlify.app/",
-    image: timeIsRunning,
+    image: "/img/time-is-running.webp",
     fit: "cover",
   },
   {
@@ -62,7 +53,7 @@ export const projectsData: Project[] = [
     title: "Recipe App",
     languages: ["JS", "HTML", "SCSS", "MVC", "API"],
     link: "https://forkify-app-panos.netlify.app/",
-    image: forkify,
+    image: "/img/forkify.webp",
     fit: "cover",
   },
   {
@@ -70,7 +61,7 @@ export const projectsData: Project[] = [
     title: "Portfolio Website",
     languages: ["Wordpress", "Responsive"],
     link: "https://sarakiniotis.com/",
-    image: vsite,
+    image: "/img/vsite.webp",
     fit: "cover",
   },
   {
@@ -78,7 +69,7 @@ export const projectsData: Project[] = [
     title: "Task Manager",
     languages: ["React", "Tailwind", "Responsive"],
     link: "https://workdeck.netlify.app/",
-    image: taskManager,
+    image: "/img/taskmanager.webp",
     fit: "contain",
   },
 ];
