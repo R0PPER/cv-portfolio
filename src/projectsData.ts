@@ -1,11 +1,11 @@
-import paymento from "./img/paymento.png";
-import cookSmarter from "./img/cooksmarter.png";
-import personalCv from "./img/personal-cv-pagepilling.png";
-import ticTacToe from "./img/tic-tac-toe.png";
-import timeIsRunning from "./img/time-is-running.png";
-import forkify from "./img/forkify.png";
-import vsite from "./img/vsite.png";
-import taskManager from "./img/taskmanager.png";
+import paymento from "./img/paymento.webp";
+import cookSmarter from "./img/cooksmarter.webp";
+import personalCv from "./img/personal-cv-pagepilling.webp";
+import ticTacToe from "./img/tic-tac-toe.webp";
+import timeIsRunning from "./img/time-is-running.webp";
+import forkify from "./img/forkify.webp";
+import vsite from "./img/vsite.webp";
+import taskManager from "./img/taskmanager.webp";
 
 export type Project = {
   id: number;
@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
   {
     id: 1,
     title: "Payment System",
-    languages: ["JS", "HTML", "CSS", "MVC", "API"],
+    languages: ["JS", "HTML", "CSS", "MVC", "API", "Responsive"],
     link: "https://paymento.netlify.app/",
     image: paymento,
     fit: "cover",
@@ -52,7 +52,7 @@ export const projectsData: Project[] = [
   {
     id: 5,
     title: "Time Is Running",
-    languages: ["React", "CSS"],
+    languages: ["React", "CSS", "Responsive"],
     link: "https://time-is-running-v01.netlify.app/",
     image: timeIsRunning,
     fit: "cover",
@@ -68,7 +68,7 @@ export const projectsData: Project[] = [
   {
     id: 7,
     title: "Portfolio Website",
-    languages: ["Wordpress"],
+    languages: ["Wordpress", "Responsive"],
     link: "https://sarakiniotis.com/",
     image: vsite,
     fit: "cover",
@@ -76,7 +76,7 @@ export const projectsData: Project[] = [
   {
     id: 8,
     title: "Task Manager",
-    languages: ["React", "Tailwind"],
+    languages: ["React", "Tailwind", "Responsive"],
     link: "https://workdeck.netlify.app/",
     image: taskManager,
     fit: "contain",

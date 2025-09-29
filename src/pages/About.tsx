@@ -1,6 +1,6 @@
 import { Button } from "../Button";
 import { ArrowDownIcon } from "../icons/ArrowDownIcon";
-import imageUrl from "../img/Photo.png";
+import imageUrl from "../img/Photo.webp";
 
 export const About = () => {
   return (

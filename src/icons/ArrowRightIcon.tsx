@@ -3,7 +3,7 @@ interface IconProps {
   className?: string;
 }
 
-export const ArrowRightIcon = ({ size = 21, className = "" }: IconProps) => {
+export const ArrowRightIcon = ({ size = 18, className = "" }: IconProps) => {
   return (
     <svg
       className={className}

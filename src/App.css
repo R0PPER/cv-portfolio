@@ -544,6 +544,19 @@ p {
   * {
     cursor: auto !important;
   }
+  /* Work section hover effects */
+  .work-titles a:hover {
+    background: transparent !important;
+  }
+
+  .work-titles a:hover h4 {
+    transform: none !important;
+  }
+
+  .work-titles a:hover h4 .arrow-svg {
+    opacity: 0 !important;
+    transform: translateX(-10px) !important;
+  }
 }
 /*********** WORK Media Queries ***********/
 /* Extra small devices (portrait phones) */
@@ -554,17 +567,17 @@ p {
   .work-text {
     grid-column: 1 / -1; /* Καλύπτει και τις δύο columns */
     justify-self: center; /* Οριζόντιο κέντρο */
-    width: 80vw;
+    width: 85vw;
   }
   .work-text h2 {
     font-size: 1.8rem;
     text-align: center;
   }
   .work-text h4 {
-    font-size: 0.86rem;
+    font-size: 0.84rem;
   }
   .work-text p {
-    font-size: 0.7rem;
+    font-size: 0.66rem;
   }
 }
 

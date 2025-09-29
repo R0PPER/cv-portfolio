@@ -2,7 +2,7 @@ interface IconProps {
   size?: number;
 }
 
-export const ArrowUpRightIcon = ({ size = 22 }: IconProps) => {
+export const ArrowUpRightIcon = ({ size = 20 }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
